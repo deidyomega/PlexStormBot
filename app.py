@@ -97,10 +97,11 @@ def get_cmd(content, tip=False):
         for item in SETTINGS.commands:
             if content in item.keys():
                 return item[content[1:]]
-    # TIP MENU
-    for item in SETTINGS.tip_commands:
-        if content in item.keys():
-            return item[content[1:]]
+    else:
+        # TIP MENU
+        for item in SETTINGS.tip_commands:
+            if content in item.keys():
+                return item[content[1:]]
 
 
 @sio.on("App\Events\MessageCreated")
