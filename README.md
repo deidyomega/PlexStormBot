@@ -1,11 +1,12 @@
 # Plexstorm ChatBot
 
 ## How to use:
-1. Download the app.exe
-2. fill in settings.yml
-3. Start app.exe
-4. ??
-5. Profit
+1. Download the plexbot.zip
+2. Unzip file somewhere
+3. fill in settings.yml
+4. Start app.exe
+5. ??
+6. Profit
 
 Sample YML file:
 
