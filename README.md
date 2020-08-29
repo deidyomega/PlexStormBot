@@ -1,7 +1,7 @@
 # Plexstorm ChatBot
 
 ## How to use:
-1. Download the plexbot.zip
+1. Download the [plexbot.zip](https://github.com/deidyomega/PlexStormBot/releases/download/v0.2/plexbot.zip)
 2. Unzip file somewhere
 3. fill in settings.yml
 4. Start app.exe
