@@ -8,6 +8,11 @@
 5. ??
 6. Profit
 
+### Feature Requests / Issues
+Go here: https://github.com/deidyomega/PlexStormBot/issues
+
+In the title please note if this is a feature request or a bug
+
 Sample YML file:
 
     username: "bot@bot.com"
