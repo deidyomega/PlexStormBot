@@ -27,7 +27,19 @@ Sample YML file:
     # This will fire off ONLY if someone tips, AND the tip
     # menu item matches the command name
     tip_commands:
-    - "Boop!": "I was booped"
+        - "Boop!": "I was booped"
+
+    # spin is SPECIAL, it randomly selects an item !spin to use
+    spin:
+        - "Remove Article of Clothing"
+        - "Spanks x3"
+        - "Spanks x5"
+        - "Spanks x10"
+        - "Dance"
+        - "BJ"
+        - "Better Luck Next Time!"
+        - "Snapchat"
+        - "Video (msg me in discord)"
 
 
 # DEVELOPERS:

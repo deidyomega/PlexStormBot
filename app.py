@@ -2,6 +2,7 @@ import socketio
 import requests
 import json
 from yaml import load, Loader
+import random
 
 
 class User:
@@ -61,13 +62,13 @@ class Settings:
     def __init__(self):
         with open("settings.yml", "r") as f:
             data = load(f, Loader=Loader)
-            print(data)
 
         self.username = data["username"]
         self.password = data["password"]
         self.channel = data["channel"]
         self.commands = data["commands"]
         self.tip_commands = data["tip_commands"]
+        self.spin = data["spin"]
 
 
 ## SETUP APPLICATION
@@ -94,6 +95,9 @@ def connect():
 def get_cmd(content, tip=False):
     if not tip:
         content = content[1:]
+        if content == "spin":
+            return random.choice(SETTINGS.spin)
+
         for item in SETTINGS.commands:
             if content in item.keys():
                 return item[content[1:]]
